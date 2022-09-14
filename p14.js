@@ -155,12 +155,15 @@ Arrow.addEventListener("click", ()=>{
     Outbox.classList.remove("active");
 })
 
-
+// preloading section 
 function myfunction(){
     var preloader=document.querySelector(".loading");
+    var x=document.querySelector(".outbox");
+    x.style.display="none";
     setTimeout(() => {
         preloader.style.display="none";
-    }, 2000);
+        x.style.display="block";
+    }, 1500);
 }
 
 // function myfunc(){
