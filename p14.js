@@ -158,7 +158,9 @@ Arrow.addEventListener("click", ()=>{
 
 function myfunction(){
     var preloader=document.querySelector(".loading");
-    preloader.style.display="none";
+    setTimeout(() => {
+        preloader.style.display="none";
+    }, 2000);
 }
 
 // function myfunc(){
